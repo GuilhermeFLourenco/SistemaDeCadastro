@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width-device-width, initial-scale=1.0">
+   <title>Cadastro de Alunos</title>
+
+   <link rel="stylesheet" href="css/style.css">
+
+   <script src="js/script1.js"></script>
+</head>
+<body>
+
+   <header>
+      <h1>Cadastro de Alunos</h1>
+   </header>
+
+   <main>
+       <div class="title">
+          <h2 class="center">Dados de Alunos</h2>
+          <center><span>Registros de informações e notas dos alunos</span></center>
+       </div>
+
+       <div class="card">
+          <div class="lineInput">
+            <label>Aluno(a)</label>
+            <input type="text" id="nomeAluno" placeholder="Nome do Aluno(a)">
+          </div>
+
+          <div class="lineInput">
+            <label>Telefone</label>
+            <input type= "text" id="telefone" placeholder="Telefone">
+          </div>
+
+          <div class="lineInput">
+            <label>Data de Nascimento</label>
+            <input type="date" id="dataNascimento" placeholder="Data de Nascimento">
+          </div>
+
+          <div class="lineInput">
+            <label>Nota Final do Curso</label>
+            <input type="text" id="notaFinal" placeholder="Nota Final do Aluno(a)">
+          </div>
+          
+          <button onclick="aluno.salvar()">Salvar</button>
+          <button onclick="aluno.cancelar()">Cancelar</button>
+       </div>
+
+       
+     <div class="conteudo">
+        <table border=1>
+           <thead>
+              <th>Id</th>
+              <th>Nome</th>
+              <th>Telefone</th>
+              <th>Data de Nascimento</th>
+              <th>Nota Final do Cusro</th>
+              <th>Botão/Excluir</th>
+           </thead>
+           <tbody id = tabela>
+              
+           </tbody>
+        </table>
+     </div>
+   </main>
+    
+    
+</body>
+</html>
